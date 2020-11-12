@@ -189,7 +189,7 @@ function Capture(){
 
 // Alerta de descrição
 function alertaDesc(){
-	// alert("Este é o meu trabalho de TCC. Um sistema de Localização Indoor.\n\nAs palavras-chave para testar são: central, professor(es) e banheiro(s). É só digitar aqui na sua direita ou abaixo desde aviso.\n\nA proposta desse trabalho é que com um código QR é possível chamar este webservice para ajudar alunos e visitantes a localizarem-se dentro do campus universitário.\n\nEsta é a maneira mais fácil de testar e validar essa ideia, então obrigado por contribuir! ;)")
+	alert("Este é o meu trabalho de TCC. Um sistema de Localização Indoor.\n\nAs palavras-chave para testar são: central, professor(es) e banheiro(s). É só digitar aqui na sua direita ou abaixo desde aviso.\n\nA proposta desse trabalho é que com um código QR é possível chamar este webservice para ajudar alunos e visitantes a localizarem-se dentro do campus universitário.\n\nEsta é a maneira mais fácil de testar e validar essa ideia, então obrigado por contribuir! ;)")
 
 	startTime()
 }
