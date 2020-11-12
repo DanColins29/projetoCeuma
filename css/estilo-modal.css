@@ -241,13 +241,13 @@ a:link {
   .titulo {
     position: absolute;
     font-size: 20pt;
-    margin-left: 40%;
-    margin-right: 45%;
+    margin-left: 35%;
+    margin-right: 35%;
   }
 
   .form {
     margin-top: 60px;
-    margin-right: 180px;
+    margin-right: 50px;
   }
 
   #txtBusca {
@@ -266,7 +266,7 @@ a:link {
     display: none;
     width: 60%;
     height: 180px;
-    margin-top: 1200px;
+    margin-top: 120px;
     margin-left: 80px;
   }
 
@@ -283,7 +283,7 @@ a:link {
 
   .valid {
     font-size: 12pt;
-    margin-left: 200px;
+    margin-left: 140px;
   }
 
   /* Modais */
