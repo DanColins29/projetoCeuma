@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Odibee Sans', cursive;
+  background-color: #e3eeff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/*--- Demais Estilos ---*/
+
+/* Topo da página */
+.nav {
+  margin-top: 10px;
+}
+
+.titulo {
+  color: #091a5e;
+  margin: 0;
+  margin-left: 50px;
+  float: left;
+}
+
+.form { 
+  float: right;
+  box-sizing: border-box;
+}
+
+.form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* The Modal (background) */
+.modal {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #fff;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f54b42;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 14px;
+  background-color: #091a5e;
+  color: white;
+}
+
+.modal-header h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;;
+}
+
+.modal-body {
+  padding: 1px 16px;
+}
+
+.modal-body h2, p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.modal-footer {
+  text-align: center;
+  padding: 10px 16px;
+  background-color: #091a5e;
+}
+
+.valid {
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  font-size: 20pt;
+  background-color: #c5463f;
+  border: solid 1px black;
+}
+
+.valid a {
+  color: #fff;
+}
+
+/* Estilo ID's */
+
+#txtBusca {
+  float: left;
+  width: 74%;
+  font-size: 14pt;
+  padding: 10px;
+  color:black;
+  border: 1px solid white;
+}
+
+#btnBusca {
+  font-size: 14pt;
+  float: left;
+  padding: 10px;
+  width: 18%;
+  background: #091a5e;
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+}
+
+#btnBusca:hover {
+  background: #0b7dda;
+}
+
+#btnLoc {
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  margin-right: 0px;
+  transition: .8s;
+}
+
+#btnLoc:hover {
+  background-color: #040b24;
+  transition: .8s;
+}
+
+#image {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  width: 80%;
+  height: 500px;
+  margin-top: 80px;
+  margin-left: 140px;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#andar {
+  text-align: center;
+  background-color: #36afbf;
+  margin-top: -8px;
+  padding: 5px;
+  width: 134px;
+  height: auto;
+  border: 1px solid white;
+}
+
+#current-time {
+  font-size: 16pt;
+}
+
+#abas {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -10px;
+}
+
+#abas li {
+  padding-top: 10px;
+  font-size: 15pt;
+  text-align: center;
+  background-color: #091a5e;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/*------- Media Response ---------*/
+
+@media screen and (max-width: 300px){
+  .titulo {
+    position: absolute;
+    font-size: small;
+    margin-left: 38%;
+    margin-right: 25%;
+  }
+
+  .form {
+    margin-top: 30px;
+    margin-right: 26px;
+  }
+
+  #txtBusca {
+    padding: 6px;
+    font-size: 8pt;
+    width: 68%;
+  }
+
+  #btnBusca {
+    padding: 6px;
+    font-size: 8pt;
+  }
+
+  #image {
+    overflow: hidden;
+    display: none;
+    width: 70%;
+    height: 180px;
+    margin-top: 70px;
+    margin-left: 46px;
+  }
+
+  #abas {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -5px;
+  }
+
+  #abas li {
+    font-size: 8pt;
+    width: 40px;
+  }
+
+  .valid {
+    font-size: 10pt;
+    margin-left: 75px;
+  }
+
+  /* Modais */
+
+  .modal {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10px;
+  }
+
+
+  .modal-header {
+    padding: 1px 7px;
+    background-color: #091a5e;
+    color: white;
+  }
+  
+  .modal-header h2 {
+    margin-top: 8px;
+    margin-bottom: 3px;;
+  }
+  
+  .modal-body {
+    padding: 1px 8px;
+  }
+  
+  .modal-body h2, p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .modal-footer {
+    
+    text-align: center;
+    padding: 5px 8px;
+    background-color: #091a5e;
+  }
+
+  .modal-footer button {
+    font-size: 8pt;
+    padding: 2px;
+  }
+
+}

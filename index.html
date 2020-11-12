@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Achei Aqui!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo-modal.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body onload="startTime()">
+
+	<div id="abas">
+		<ul>
+			<li id="a3">Andar III</li>
+			<li id="a2">Andar II</li>
+			<li id="a1">Andar I</li>
+			<li id="sl">Sobreloja</li>
+			<li id="t"><a onclick="home()">Térreo</a></li>
+		</ul>
+	</div>
+	
+	<div id="control">
+		<div class="nav">
+			<h1 class="titulo">Achei Aqui!</h1>
+		</div>
+		
+
+		<div class="form">
+			<input type="text" id="txtBusca" placeholder="Digite o que procura..." list="historico" autofocus="" onkeydown="javascript:EnterTab('btnBusca',event)">
+			<button id="btnBusca" onclick="Capture()"><a class="fa fa-search"></a></button>
+						
+			<datalist id="historico">
+				<option value="banheiros - Terreo"></option>
+				<option value="banheiros - Andar I"></option>
+				<option value="central de atendimento - Terreo"></option>
+				<option value="sala dos professores - Sobreloja"></option>
+				<option value="central"></option>
+			</datalist>
+		</div>
+
+	
+		<!--   Localização   -->
+		<div id="image-style">
+			<img id="image">
+		</div>
+		<!-- Fim Localização -->
+		
+		<!-- Modal Context Central de Atendimento -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" onclick="Span()">&times;</span>
+					<h3 id="andar">Andar: Térreo</h3>
+					<h2>Central de Atendimento</h2>
+				</div>
+	
+				<div class="modal-body">
+					<h2>Horário de Funcionamento</h2>
+					<p>Das 08:00 às 18:00</p>
+					<div id="txt"></div>
+					<p id="current-time"></p>
+					<h2>Contatos</h2>
+					<p>WhatsApp - (98) 94020-7525</p>
+					<p>Call Center - 4020-7525</p>
+				</div>
+	
+				<div class="modal-footer">
+					<button type="button" id="btnLoc" onclick="callCentral()">Localização</button>
+				</div>
+			</div>
+		</div>
+		<!--End Modal Context Central de Atendimento-->
+	
+		<!-- Modal Context Banheiros -->
+		<div id="myModal-1" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" onclick="Span1()">&times;</span>
+					<h3 id="andar">Andar: Térreo</h3>
+					<h2>Banheiros</h2>
+				</div>
+	
+				<div class="modal-body">
+					<h2>Horário de Funcionamento</h2>
+					<p>Aberto Durante Horário de Expediente</p>
+				</div>
+	
+				<div class="modal-footer">
+					<button type="button" id="btnLoc" onclick="callBanheiros()">Localização</button>
+				</div>
+			</div>
+		</div>
+		<!--End Modal Context Banheiros-->
+	
+		<!-- Modal Context Sala de Professores -->
+		<div id="myModal-2" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close" onclick="Span2()">&times;</span>
+					<h3 id="andar">Andar: I</h3>
+					<h2>Sala de Professores</h2>
+				</div>
+	
+				<div class="modal-body">
+					<h2>Horário de Funcionamento</h2>
+					<p>Aberto Durante Horário de Expediente</p>
+				</div>
+	
+				<div class="modal-footer">
+					<button type="button" id="btnLoc" onclick="callSalaProf()">Localização</button>
+				</div>
+			</div>
+		</div>
+		<!--End Modal Context Banheiros-->
+	</div>
+
+	<div class="valid">
+		<span><a href="https://forms.gle/1sEXkXVUKMCc9Hzv5" target="blank">Valide aqui esse projeto!</a></span>	
+	</div>
+</body>
+</html>
