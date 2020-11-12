@@ -41,7 +41,6 @@ function Span2(){
 	document.getElementsByClassName("close")[0];
 	modal.style.display = "none";
 }
-
 //----------Calls-----------
 
 //Mostra Direção da Central
@@ -167,7 +166,7 @@ function Capture(){
 		return false;
 	}
 
-	if (capture == "banheiros - Terreo") {
+	if (capture == "banheiros - Terreo"  || capture == "banheiros" || capture == "banheiro") {
 		Btn1();
 		document.getElementById('txtBusca').value='';
 	}
@@ -182,7 +181,7 @@ function Capture(){
 		document.getElementById('txtBusca').value='';
 	}
 
-	if (capture ==  "sala dos professores - Sobreloja" || capture == "professores") {
+	if (capture ==  "sala dos professores - Sobreloja" || capture == "professores" || capture == "sala professores" || capture == "professor") {
 		Btn2();
 		document.getElementById('txtBusca').value='';
 	}
@@ -190,5 +189,7 @@ function Capture(){
 
 // Alerta de descrição
 function alertaDesc(){
-	alert("Este é o meu trabalho de TCC. Com um código QR é possível chamar este webservice para ajudar alunos e visitantes a localizarem-se dentro do campus universitário.\n\nEsta é a maneira mais fácil de testar e validar, então obrigado por contribuir! ;)")
+	// alert("Este é o meu trabalho de TCC. Um sistema de Localização Indoor.\n\nAs palavras-chave para testar são: central, professor(es) e banheiro(s). É só digitar aqui na sua direita ou abaixo desde aviso.\n\nA proposta desse trabalho é que com um código QR é possível chamar este webservice para ajudar alunos e visitantes a localizarem-se dentro do campus universitário.\n\nEsta é a maneira mais fácil de testar e validar essa ideia, então obrigado por contribuir! ;)")
+
+	startTime()
 }

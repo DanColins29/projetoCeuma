@@ -62,6 +62,22 @@ a:link {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal-recado {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20;
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -221,42 +237,42 @@ a:link {
 
 /*------- Media Response ---------*/
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 640px){
   .titulo {
     position: absolute;
-    font-size: small;
-    margin-left: 38%;
-    margin-right: 25%;
+    font-size: 20pt;
+    margin-left: 40%;
+    margin-right: 45%;
   }
 
   .form {
-    margin-top: 30px;
-    margin-right: 26px;
+    margin-top: 60px;
+    margin-right: 180px;
   }
 
   #txtBusca {
-    padding: 6px;
-    font-size: 8pt;
+    padding: 8px;
+    font-size: 12pt;
     width: 68%;
   }
 
   #btnBusca {
-    padding: 6px;
-    font-size: 8pt;
+    padding: 8px;
+    font-size: 12pt;
   }
 
   #image {
     overflow: hidden;
     display: none;
-    width: 70%;
+    width: 60%;
     height: 180px;
-    margin-top: 70px;
-    margin-left: 46px;
+    margin-top: 1200px;
+    margin-left: 80px;
   }
 
   #abas {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: -5px;
   }
 
@@ -266,8 +282,8 @@ a:link {
   }
 
   .valid {
-    font-size: 10pt;
-    margin-left: 75px;
+    font-size: 12pt;
+    margin-left: 200px;
   }
 
   /* Modais */
